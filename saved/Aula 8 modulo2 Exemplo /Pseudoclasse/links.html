@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* SELETORES PERSONALISADOS
+            #  =  id
+            .  =  class
+            :  =  pseudo-class
+            :: =  pseudo-element
+            >  =  cilldren
+        */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        color: rgb(38, 152, 18);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:visited {
+        color: aquamarine;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: rgb(125, 58, 115);
+      }
+
+      a:active {
+        color: rgb(0, 60, 255);
+      }
+
+      .special {
+        background-color: antiquewhite;
+        color: rgb(17, 68, 8);
+      }
+
+      .special::before {
+        content: "-> ";
+      }
+
+      .special::after {
+        content: " <-";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalisando links</h1>
+    <ul>
+      <li><a href="#">Github</a></li>
+      <li><a href="#" class="special">Youtube</a></li>
+      <li><a href="#">Site</a></li>
+    </ul>
+  </body>
+</html>
