@@ -21,15 +21,18 @@ main {
   margin: 60px;
 }
 button {
-    padding: 20px;
-    border-radius: 6px;
-    background-color: var(--main);
-    color: var(--greylight);
-    flex: 1 1 200px;
-    margin: 10px 10px;
-    border-style: solid;
-    border: 0;
+  flex: 1 1 220px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: var(--main);
+  color: var(--greylight);
+  margin: 10px 10px;
+  border-style: solid;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
 }
+
 h1 {
   text-align: center;
   font-size: 3em;
@@ -39,9 +42,8 @@ h2 {
   text-align: center;
   margin: 20px;
 }
-a{
+a {
   text-decoration: none;
-  font-weight: bold;
   color: var(--greylight);
 }
 p {
@@ -67,11 +69,47 @@ div.video > iframe {
 }
 
 footer {
-    background-color: var(--grey);
+  background-color: var(--grey);
 }
 
 footer > p {
-    margin: 0;
-    padding: 0;
-    color: var(--greylight);
+  margin: 0;
+  padding: 0;
+  color: var(--greylight);
 }
+
+/* article {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #1f2023;
+}
+  hamburger {
+  width: 40px;
+  CUrsor: pointer;
+  }
+
+  .hamburger span {
+  width: 100%; 
+  height: 3px;
+  display: block;
+  background: #ffffff;
+  transition: all 0.2s; 
+  border-radius: 20px;
+  }
+
+stuffing {
+margin: 10ox 0:
+}
+.top-bun.active {
+transform: rotate(-45deg) translate(-9.5px);
+width: 50%;
+}
+stuffing.active {
+width: 80%;
+transform: translate(-30x);
+}
+bottom-bun.active {
+transform: rotate(45deg) translate(-9.5px);
+width: 50%;
+} */
