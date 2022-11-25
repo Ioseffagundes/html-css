@@ -13,11 +13,22 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--greylight);
+  margin-top: 40px;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px;
 }
 button {
-    padding: 10px;
+    padding: 20px;
+    border-radius: 6px;
     background-color: var(--main);
     color: var(--greylight);
+    flex: 1 1 200px;
+    margin: 10px 10px;
+    border-style: solid;
+    border: 0;
 }
 h1 {
   text-align: center;
@@ -27,6 +38,11 @@ h1 {
 h2 {
   text-align: center;
   margin: 20px;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--greylight);
 }
 p {
   text-align: center;
