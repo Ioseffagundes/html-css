@@ -12,8 +12,7 @@
   padding: 0;
 }
 body {
-  font-family: "Sriracha", cursive;
-  font-size: 2em;
+  min-height: 100%vh;
 }
 header {
   font-family: "Passion One", cursive;
@@ -23,29 +22,43 @@ header {
 }
 h1 {
   text-align: center;
+  font-size: 10vw;
+  font-variant: small-caps;
 }
 h2 {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 1em;
 }
 a {
   color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 10vh 0vh 10vh 5vh;
+  line-height: 2em;
 }
 p {
-  padding: 0px 0px 40px 40px;
-  line-height: 1em;
+  font-family: "Sriracha", cursive;
+  font-size: 4vw;
+  padding: 0px 0px 5vh 2vh;
 }
 
 .txt-image {
   width: 100%;
   background-image: url("imagens/background002.jpg");
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   color: var(--white);
 }
-.txt-image > p {
+.txt-image p {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 400px;
+  width: 450px;
 }
 
 footer {
