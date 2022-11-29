@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iFrame 02</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      iframe#screen {
+        width: 97vw;
+        height: 30vh;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Linking pages with "target" on iframe</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, odit
+      ducimus aliquid atque, rem"odio ipsa, blanditiis molestias quas eius
+      temporibus dolores maiores nam? Eaque voluptas et nesciunt eligendi
+      impedit.
+    </p>
+    <ul>
+      <li><a href="pages/page01.html" target="frame">Page 01</a></li>
+      <li><a href="pages/page02.html" target="frame">Page 02</a></li>
+      <li><a href="pages/page03.html" target="frame">Page 03</a></li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam debitis
+      molestias repellat nemo dolores aliquam reiciendis sed dolore, cum quos
+      sequi aut culpa praesentium inventore voluptate earum laboriosam rem
+      distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptate rem veritatis, accusantium in ut repellat consequatur quaerat
+      quibusdam neque ullam placeat, asperiores et mollitia. Minus sunt nesciunt
+      ab magnam nulla?
+    </p>
+    <iframe
+      id="screen"
+      name="frame"
+      srcdoc="<h1>Choose any page above... </h1><h3>(This text is like a placeholder)</h3>"
+      ><p>Your browser isnt compatible with iFrame</p></iframe
+    >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi,
+      magni libero doloribus corporis cupiditate amet similique fugiat quos,
+      voluptas, cumque alias incidunt sit esse illum inventore aperiam.
+      Consequuntur, eaque!
+    </p>
+  </body>
+</html>
