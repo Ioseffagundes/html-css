@@ -43,12 +43,12 @@ a:hover {
 }
 section {
   padding: 10vh 0vh 10vh 5vh;
-  line-height: 2em;
 }
 section p {
   font-family: var(--font3);
   font-size: 4vw;
   padding: 0px 0px 5vh 2vh;
+  line-height: 1em;
 }
 
 .txt-image {
@@ -65,11 +65,11 @@ section p {
   width: 50vw;
 }
 
-section#img01{
-    background-image: url("imagens/background001.jpg");
+section#img01 {
+  background-image: url("imagens/background001.jpg");
 }
-section#img02{
-    background-image: url("imagens/background002.jpg");
+section#img02 {
+  background-image: url("imagens/background002.jpg");
 }
 footer {
   font-family: var(--font1);
