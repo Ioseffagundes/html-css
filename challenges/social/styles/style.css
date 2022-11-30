@@ -39,7 +39,7 @@ iframe#screen {
   position: relative;
   top: 80px;
   left: 22px;
-  width: 269px;
+  width: 266px;
   height: 471px;
 }
 section#social {
@@ -54,6 +54,6 @@ section#social img {
 section#social img:hover {
   border: 2px solid rgba(255, 255, 255, 0.5);
   transform: translate(-5px, -5px);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   transition: ease-in-out 150ms;
 }
