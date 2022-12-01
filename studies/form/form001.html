@@ -14,6 +14,15 @@
         background-color: rgb(62, 63, 64);
         color: #ff4400;
       }
+      h1 {
+        text-align: center;
+      }
+      fieldset{
+        display: inline;
+        margin: 20px;
+        border-radius: 8px;
+        border: 1px solid rgb(255, 255, 255);
+      }
       div {
         margin: 8px;
       }
@@ -36,78 +45,133 @@
   <body>
     <h1>My form</h1>
     <form action="form.php" method="post" autocomplete="on">
-      <div>
-        <label for="iname">Full Name:</label>
-        <input
-          type="text"
-          name="name"
-          id="iname"
-          placeholder="Your name"
-          autocomplete="name"
-        />
-      </div>
-      <div>
-        <label for="iUser">Username:</label>
-        <input
-          type="text"
-          name="user"
-          id="iUser"
-          minlength="5"
-          maxlength="15"
-          size="25"
-          autocomplete="username"
-          placeholder="Your username"
-        />
-      </div>
-      <div>
-        <label for="iPassword">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="iPassword"
-          required
-          minlength="8"
-          maxlength="30"
-          placeholder="min 8"
-          autocomplete="current-password"
-        />
-      </div>
-      <div>
-        <label for="iNumber">Number:</label>
-        <input
-          type="number"
-          name="number"
-          id="iNumber"
-          min="0"
-          max="10"
-          placeholder="0-10"
-          step="0.5"
-        />
-      </div>
-      <div>
-        <label for="iMonth">Month:</label>
-        <input type="month" name="month" id="iMonth" />
-      </div>
-      <div>
-        <label for="iDate">Date:</label>
-        <input type="date" name="date" id="iDate" />
-      </div>
-      <div>
-        <label for="iTime">Time:</label
-        ><input type="time" name="time" id="iTime" />
-      </div>
-      <div>
-        <label for="datetime-local">Data+time:</label>
-        <input
-          type="datetime-local"
-          name="datetime-local"
-          id="iDatetime-local"
-        />
-      </div>
-      <div>
-        <label for="iRange">Range:</label>
-        <input type="range" name="range" id="iRange" />
-      </div>
+      <fieldset>
+        <legend>Input tests</legend>
+        <div>
+          <label for="iname">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="iname"
+            placeholder="Your name"
+            autocomplete="name"
+          />
+        </div>
+        <div>
+          <label for="iUser">Username:</label>
+          <input
+            type="text"
+            name="user"
+            id="iUser"
+            minlength="5"
+            maxlength="15"
+            size="25"
+            autocomplete="username"
+            placeholder="Your username"
+          />
+        </div>
+        <div>
+          <label for="iPassword">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="iPassword"
+            required
+            minlength="8"
+            maxlength="30"
+            placeholder="min 8"
+            autocomplete="current-password"
+          />
+        </div>
+        <div>
+          <label for="iNumber">Number:</label>
+          <input
+            type="number"
+            name="number"
+            id="iNumber"
+            min="0"
+            max="10"
+            placeholder="0-10"
+            step="0.5"
+          />
+        </div>
+        <div>
+          <label for="iMonth">Month:</label>
+          <input type="month" name="month" id="iMonth" />
+        </div>
+        <div>
+          <label for="iDate">Date:</label>
+          <input type="date" name="date" id="iDate" />
+        </div>
+        <div>
+          <label for="iTime">Time:</label
+          ><input type="time" name="time" id="iTime" />
+        </div>
+        <div>
+          <label for="datetime-local">Data+time:</label>
+          <input
+            type="datetime-local"
+            name="datetime-local"
+            id="iDatetime-local"
+          />
+        </div>
+        <div>
+          <label for="iEmail">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="iEmail"
+            placeholder="name@name.com"
+            autocomplete="email"
+          />
+        </div>
+        <div>
+          <label for="iPhone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="iPhone"
+            placeholder="(xx) xxxx-xxxx"
+            autocomplete="tel"
+            pattern="ˆ\(\d{2}\)\d{4,5}-\d{4}$"
+          />
+        </div>
+        <!-- Estudar mais sobre RegEx -->
+     
+      </fieldset>
+      <fieldset>
+        <legend>Buttons</legend>
+        <div>
+          <input type="checkbox" name="checkbox1" id="iCheckbox1" />
+          <label for="iCheckbox1">Checkbox1</label><br />
+          <input type="checkbox" name="checkbox2" id="iCheckbox2" checked />
+          <label for="iCheckbox2">Checkbox2</label><br />
+          <input type="checkbox" name="checkbox3" id="iCheckbox3" />
+          <label for="iCheckbox3">Checkbox3</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" id="iRadio" />
+          <label for="iRadio">Radio</label> <br />
+          <input type="radio" name="radio" id="iRadio1" />
+          <label for="iRadio1">Radio1</label>
+          <!-- tem que ter o mesmo "name" -->
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Other inputs</legend>
+        <div>
+            <label for="iColor">Select color:</label>
+            <input type="color" name="color" id="iColor" value="#00ff00">
+        </div>
+        <div>
+            <label for="iRange">Range:</label>
+            <input type="range" name="range" id="iRange" min="1" max="5"/>
+          </div>
+          <div>
+            <label for="iFile">File:</label>
+            <input type="file" name="file" id="iFile">
+          </div>
+      </fieldset>
       <p>
         <input type="reset" value="Clean" />
         <input type="submit" value="Send" />
