@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff4400" />
+    <title>Form</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: rgb(62, 63, 64);
+        color: #ff4400;
+      }
+      div {
+        margin: 8px;
+      }
+      label {
+        color: white;
+      }
+      input#iname {
+        width: 300px;
+        border-radius: 6px;
+        border: 2px solid #ff4400;
+        background-color: rgb(45, 46, 46);
+        color: white;
+        padding: 16px;
+      }
+      input#iLastName {
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My form</h1>
+    <form action="form.php" method="post" autocomplete="on">
+      <div>
+        <label for="iname">Full Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="iname"
+          placeholder="Your name"
+          autocomplete="name"
+        />
+      </div>
+      <div>
+        <label for="iUser">Username:</label>
+        <input
+          type="text"
+          name="user"
+          id="iUser"
+          minlength="5"
+          maxlength="15"
+          size="25"
+          autocomplete="username"
+          placeholder="Your username"
+        />
+      </div>
+      <div>
+        <label for="iPassword">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="iPassword"
+          required
+          minlength="8"
+          maxlength="30"
+          placeholder="min 8"
+          autocomplete="current-password"
+        />
+      </div>
+      <div>
+        <label for="iNumber">Number:</label>
+        <input
+          type="number"
+          name="number"
+          id="iNumber"
+          min="0"
+          max="10"
+          placeholder="0-10"
+          step="0.5"
+        />
+      </div>
+      <div>
+        <label for="iMonth">Month:</label>
+        <input type="month" name="month" id="iMonth" />
+      </div>
+      <div>
+        <label for="iDate">Date:</label>
+        <input type="date" name="date" id="iDate" />
+      </div>
+      <div>
+        <label for="iTime">Time:</label
+        ><input type="time" name="time" id="iTime" />
+      </div>
+      <div>
+        <label for="datetime-local">Data+time:</label>
+        <input
+          type="datetime-local"
+          name="datetime-local"
+          id="iDatetime-local"
+        />
+      </div>
+      <div>
+        <label for="iRange">Range:</label>
+        <input type="range" name="range" id="iRange" />
+      </div>
+      <p>
+        <input type="reset" value="Clean" />
+        <input type="submit" value="Send" />
+      </p>
+    </form>
+  </body>
+</html>
