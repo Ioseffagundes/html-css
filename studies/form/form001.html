@@ -173,10 +173,74 @@
           <input type="file" name="file" id="iFile" />
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Select</legend>
+        <div>
+            <label for="iState">State:</label>
+            <select name="state" id="iState">
+                <option value="" selected>-- Choose --</option>
+              <optgroup label="Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+              </optgroup>
+              <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+              </optgroup>
+            </select>
+                  </div>
+            <div>
+                <label for="iProf">Profissão:</label>
+                <input type="text" name="prof" id="iProf" list="lstprof">
+                <datalist id="lstprof">
+            <option value="ADM">Administradpr</option>
+            <option>Contador</option>
+            </div>
+            <div>
+              <label for="iMessage">Message:</label><br>
+              <textarea name="message" id="iMessage" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Outputs</legend>
+            <div>
+                <label for="in1">Numero:1</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required 
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" />
+              </div>
+              <div>
+                <label for="in2">Numero:2</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required 
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"/>
+              </div>
+              <div>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+              </div>
+              <hr>
+              <label for="inum">Numero:</label>
+              <input type="range" name="num" id="inum" min="0" max="10" value="5"
+              oninput="ival.innerHTML = Number(inum.value)">
+              <output id="ival">5</output>
+              <hr>
+              <label for="iano">Em que ano você nasceu?</label>
+              <input type="number" name="ano" id="iano" min="1900"
+              oninput="calcIdade()"><br>
+              <label for="iidade">Sua idade é:</label>
+              <output id="iidade">0</output>
+        </fieldset>
       <p>
         <input type="reset" value="Clean" />
         <input type="submit" value="Send" />
       </p>
     </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
   </body>
 </html>
