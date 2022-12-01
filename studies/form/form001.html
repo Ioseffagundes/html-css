@@ -13,6 +13,7 @@
       body {
         background-color: rgb(62, 63, 64);
         color: #ff4400;
+        font-size: 1em;
       }
       h1 {
         text-align: center;
@@ -31,24 +32,22 @@
       label {
         color: white;
       }
-      input#iname {
-        width: 300px;
+      input.inputText {
         border-radius: 6px;
         border: 2px solid #ff4400;
         background-color: rgb(45, 46, 46);
         color: white;
         padding: 16px;
+        font-size: 1em;
       }
-      input#iLastName {
-        height: 40px;
-      }
+    
     </style>
   </head>
   <body>
     <h1>My Form</h1>
     <form action="form.php" method="post" autocomplete="on">
       <fieldset>
-        <legend>Input tests</legend>
+        <legend>Input</legend>
         <div>
           <label for="iname">Full Name:</label>
           <input
@@ -57,6 +56,7 @@
             id="iname"
             placeholder="Your name"
             autocomplete="name"
+            class="inputText"
           />
         </div>
         <div>
@@ -200,36 +200,36 @@
             </div>
             <div>
               <label for="iMessage">Message:</label><br>
-              <textarea name="message" id="iMessage" cols="30" rows="10"></textarea>
+              <textarea name="message" id="iMessage" cols="40" rows="4"></textarea>
             </div>
         </fieldset>
         <fieldset>
             <legend>Outputs</legend>
             <div>
                 <label for="in1">Numero:1</label>
-                <input type="number" name="n1" id="in1" min="0" max="50" required 
+                <input type="number" name="n1" id="in1" min="0" max="50" value="0" required 
                 oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" />
               </div>
               <div>
                 <label for="in2">Numero:2</label>
-                <input type="number" name="n2" id="in2" min="0" max="50" required 
+                <input type="number" name="n2" id="in2" min="0" max="50" value="0" required 
                 oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"/>
               </div>
               <div>
                 <label for="isoma">Soma:</label>
                 <output name="soma" id="isoma">0</output>
               </div>
-              <hr>
+             <br><hr><br>
               <label for="inum">Numero:</label>
               <input type="range" name="num" id="inum" min="0" max="10" value="5"
               oninput="ival.innerHTML = Number(inum.value)">
-              <output id="ival">5</output>
-              <hr>
+              <output id="ival">5</output><br>
+              <br><hr><br>
               <label for="iano">Em que ano você nasceu?</label>
               <input type="number" name="ano" id="iano" min="1900"
               oninput="calcIdade()"><br>
               <label for="iidade">Sua idade é:</label>
-              <output id="iidade">0</output>
+              <output id="iidade"> 0</output>
         </fieldset>
       <p>
         <input type="reset" value="Clean" />
