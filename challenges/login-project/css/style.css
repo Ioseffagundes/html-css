@@ -1,29 +1,90 @@
 @charset "UTF-8";
 
+:root {
+  --color01: rgb(131, 29, 157);
+  --color02: rgb(1, 180, 144);
+
+  --border-radius01: 6px;
+}
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
 }
-body {
+body,
+html {
   height: 100vh;
-  background: linear-gradient(180deg, rgb(131, 29, 157), rgb(16, 168, 199));
-}
-section {
-  height: 200px;
-}
-main {
-  background-color: white;
-  max-width: 540px;
-  padding: 20px;
-  margin: auto;
-  border-radius: 20px;
+  width: 100wh;
+  background-color: var(--color01);
+  background: linear-gradient(180deg, var(--color01), var(--color02));
 }
 
-div#img {
-  width: 300px;
-  height: 300px;
-  background-image: url(../img/bg-login.jpg);
+main {
+  position: relative;
+  height: 100vh;
+  width: 100wh;
+}
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+}
+p {
+  font-size: 0.8em;
+  margin: 20px 0 20px;
+}
+section#login > div#image {
+  display: block;
+  height: 200px;
+  background: var(--color01) url(../img/bg-login.jpg) no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+section#login div#form {
+  display: block;
+  padding: 10px;
+}
+input {
+  display: block;
+  margin: 6px auto;
+  background-color: var(--color02);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  padding: 10px;
+  background-color: var(--color02);
+  display: block;
+  border-radius: var(--border-radius01);
+  color: white;
+  cursor: pointer;
+  border: 2px solid var(--color02);
+  margin: 6px auto;
+  font-weight: bold;
+}
+.btn-outline {
+  display: block;
+  padding: 10px;
+  color: var(--color02);
+  border-radius: var(--border-radius01);
+  border: 2px solid var(--color02);
+  background-color: transparent;
+  cursor: pointer;
+  margin: 6px auto;
 }
