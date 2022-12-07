@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Typical device breakpoints 2022
+Small Screem: until 600px
+Mobile: 600px until 768px
+Tablet: 768px until 992px
+Laptop: 992px until 1400px
+High-res desktop: up to 1400 */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#login {
+    width: 80vw;
+  }
+  section#login > div#image {
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+  section#login > div#form {
+    float: right;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section#login {
+    width: 950px;
+  }
+  section#login > div#image {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  section#login > div#form {
+    float: right;
+    width: 50%;
+  }
+}
