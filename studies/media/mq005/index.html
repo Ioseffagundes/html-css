@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Hamburguer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Menu Hamburguer</h1>
+      <span
+        id="burguer"
+        class="material-symbols-outlined"
+        onclick="clickMenu()"
+      >
+        menu
+      </span>
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Option 01</a></li>
+          <li><a href="#">Option 02</a></li>
+          <li><a href="#">Option 03</a></li>
+          <li><a href="#">Option 04</a></li>
+          <li><a href="#">Option 05</a></li>
+          <li><a href="#">Option 06</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Title h2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+          nemo deleniti explicabo vitae aliquam cumque, qui ipsa nobis excepturi
+          exercitationem quaerat, porro ab quis suscipit recusandae eos amet ex
+          vel Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut,
+          maiores vitae aliquid iure error ad minus enim cum blanditiis tenetur
+          odio doloribus consectetur! Vel rerum beatae minus quidem sapiente.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam modi
+          impedit veritatis quia, reiciendis suscipit, ea nihil expedita
+          repellendus vel sint id. Quasi at ab libero ex perferendis, sint
+          illum?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+          tempora ea neque temporibus eligendi! Ad, cum ullam! Quae ipsum
+          dolorem amet, quisquam suscipit error, quibusdam, tenetur ex cum quo
+          doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Optio corporis iste aperiam quae. Laboriosam eius soluta molestias
+          aperiam nam, ex labore quas perspiciatis sed, tempora tempore quasi
+          similique at neque?
+        </p>
+      </article>
+    </main>
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
