@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Typical device breakpoints 2022
+Small Screem: until 600px
+Mobile: 600px until 768px
+Tablet: 768px until 992px
+Laptop: 992px until 1400px
+High-res desktop: up to 1400 */
+
+@media screen and (min-width: 768px) {
+  span#burguer {
+    display: none;
+  }
+  menu {
+    display: block;
+  }
+  menu > ul > li {
+    display: inline-block;
+  }
+  main {
+    max-width: 768px;
+  }
+}
