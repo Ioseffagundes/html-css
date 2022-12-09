@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      body {
+        background-color: bisque;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main.container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        row-gap: 24px;
+        column-gap: 8px;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        font-size: 2em;
+        text-align: center;
+        border-radius: 16px;
+        color: white;
+      }
+      div.square1 {
+        order: 0;
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        flex: 0 1 auto;
+        background-color: rgb(122, 170, 180);
+      }
+      div.square2 {
+        order: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 300px;
+        background-color: rgb(174, 133, 216);
+      }
+      div.square3 {
+        order: 0;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        background-color: rgb(240, 107, 125);
+      }
+      div:hover {
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="square1">1</div>
+      <div class="square2">2</div>
+      <div class="square3">3</div>
+      <!-- <div class="square1">4</div>
+      <div class="square2">5</div>
+      <div class="square3">6</div>
+      <div class="square1">7</div>
+      <div class="square2">8</div>
+      <div class="square3">9</div>
+      <div class="square1">10</div>
+      <div class="square2">11</div>
+      <div class="square3">12</div> -->
+    </main>
+  </body>
+</html>
